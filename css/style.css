@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    background: #E74C3C;
+    padding: 1em 0;
+}
+
+
+/* NAVIGATION */
+
+.name {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+li {
+    background-color: white;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+li a {
+    display: block;
+    padding: 10px 0;
+}
+/* Info Section */
+
+#info, #contact {
+    margin: 30px 0;
+}
+
+.profile-image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer {
+    background: #FED36E;
+    padding: 2em 0;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.f-name {
+    font-weight: 700;
+}
+
+.b-top {
+    float: right;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 640px)  and (orientation: landscape) {
+    a:hover {
+        text-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    }
+    li {
+        display: inline-block;
+        margin-right: 5px;
+        background: none;
+    }
+
+    li a {
+        color: white;
+    }
+
+    .item {
+        width: 50%;
+        display: inline-block;
+        margin-right: -4px;
+        padding-right: 1em;
+        padding-left: 1em;
+        vertical-align: top;
+    }
+
+    #info {
+        display: inline-block;
+    }
+
+    .profile-image {
+        float: right;
+        width: 300px;
+        margin-left: 30px;
+        position: static !important;
+        transform: translate(0) !important;
+    }
+
+    #contact > p {
+        margin: 20px 200px;
+        text-align: center;
+    }
+    .contact-info {
+        margin: 50px 0;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .name {
+        float: left;
+        margin-top: 5px;
+    }
+    .main-nav {
+        float: right;
+    }
+    .item {
+        width: 33%;
+    }
+}
