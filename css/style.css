@@ -60,6 +60,7 @@ li a {
     display: block;
     padding: 10px 0;
 }
+
 /* Info Section */
 
 #info, #contact {
@@ -72,6 +73,14 @@ li a {
     left: 50%;
     transform: translate(-50%);
 }
+
+/* SKILLS */
+
+#skills {
+    margin: 60px 0;
+}
+
+/* FOOTER */
 
 footer {
     background: #FED36E;
